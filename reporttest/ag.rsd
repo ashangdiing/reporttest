@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>mysqlserver</DataSourceReference>
+      <CommandText>SELECT   TS_LOG_ID, TS_CATEGORY, TS_AGENT_ID, TS_THIS_PARTY, TS_OTHER_PARTY, TS_BEGIN_TIME, TS_PICKUP_TIME, 
+                TS_END_TIME, TS_END_CAUSE, TS_SOURCE_ROUTE, TS_TRANSFER_GROUP, TS_EXTION, 
+                TS_HOLD_CALL_TIME
+FROM      TS_AGENT_LOG</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="TS_LOG_ID">
+        <DataField>TS_LOG_ID</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="TS_CATEGORY">
+        <DataField>TS_CATEGORY</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="TS_AGENT_ID">
+        <DataField>TS_AGENT_ID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TS_THIS_PARTY">
+        <DataField>TS_THIS_PARTY</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TS_OTHER_PARTY">
+        <DataField>TS_OTHER_PARTY</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TS_BEGIN_TIME">
+        <DataField>TS_BEGIN_TIME</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="TS_PICKUP_TIME">
+        <DataField>TS_PICKUP_TIME</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="TS_END_TIME">
+        <DataField>TS_END_TIME</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="TS_END_CAUSE">
+        <DataField>TS_END_CAUSE</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="TS_SOURCE_ROUTE">
+        <DataField>TS_SOURCE_ROUTE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TS_TRANSFER_GROUP">
+        <DataField>TS_TRANSFER_GROUP</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TS_EXTION">
+        <DataField>TS_EXTION</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TS_HOLD_CALL_TIME">
+        <DataField>TS_HOLD_CALL_TIME</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

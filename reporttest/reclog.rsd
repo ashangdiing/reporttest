@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>mysqlserver</DataSourceReference>
+      <CommandText>SELECT   TS_TYPE AS 呼叫类型, TS_ID AS id, TS_CHANNEL AS 通道, TS_NUMBER AS 分机号, TS_CALLER AS 主叫, 
+                TS_CALLED AS 被叫, TS_START_TIME AS st, TS_CONNECT_TIME AS ct, TS_END_TIME AS et, TS_FILE_URL AS path, 
+                TS_CALL_ID AS cid, TS_AGENT_ID AS aid
+FROM      TS_REC_LOG</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="呼叫类型">
+        <DataField>呼叫类型</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="id">
+        <DataField>id</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="通道">
+        <DataField>通道</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="分机号">
+        <DataField>分机号</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="主叫">
+        <DataField>主叫</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="被叫">
+        <DataField>被叫</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="st">
+        <DataField>st</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ct">
+        <DataField>ct</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="et">
+        <DataField>et</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="path">
+        <DataField>path</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="cid">
+        <DataField>cid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="aid">
+        <DataField>aid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
